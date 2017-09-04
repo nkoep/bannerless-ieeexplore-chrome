@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Bannerless IEEEXplore",
+  "description": "This extension kindly removes the incredibly informative page banner IEEE Xplore is nice enough to show when loading PDF documents",
+  "version": "0.1",
+  "permissions": [
+    "http://ieeexplore.ieee.org/"
+  ],
+  "content_scripts": [{
+    "matches": ["http://ieeexplore.ieee.org/*"],
+    "js": ["load-pdf.js"]
+  }],
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  }
+}
